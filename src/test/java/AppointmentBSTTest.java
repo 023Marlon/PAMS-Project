@@ -29,7 +29,6 @@ public class AppointmentBSTTest {
         bst.addAppointment(new PatientAppointment(2, "B", "08:45"));
         bst.addAppointment(new PatientAppointment(3, "C", "10:15"));
 
-        // Root should be 09:30, left 08:45, right 10:15
         assertEquals("09:30", bst.getRoot().data.appointmentTime);
         assertEquals("08:45", bst.getRoot().left.data.appointmentTime);
         assertEquals("10:15", bst.getRoot().right.data.appointmentTime);
